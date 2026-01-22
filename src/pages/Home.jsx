@@ -1,41 +1,96 @@
 import React from "react";
 import "../pages/home.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 
 const Home = () => {
     return (
         <>
-            <section
-                id="home"
-                className="vh-100 d-flex align-items-center text-white hero-section"
-            >
-                <div className="container text-center">
+         <section
+  id="home"
+  className="hero-section vh-100 d-flex align-items-center text-white position-relative"
+>
+  {/* ===== Background Slider ===== */}
+  <div
+    id="heroCarousel"
+    className="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100"
+    data-bs-ride="carousel"
+    data-bs-interval="3000"
+    data-bs-pause="false"
+  >
+    <div className="carousel-inner h-100">
 
-                    <p className="text-uppercase fw-semibold text-warning mb-2">
-                        Welcome to Non Trade Cement
-                    </p>
+      <div className="carousel-item active h-100">
+        <img src="https://media.istockphoto.com/id/1420678520/photo/building-site-at-sunset.jpg?s=612x612&w=0&k=20&c=HoDUK1RxsH78Fj9D34nao_MUTbf-vR3G97zUWMtES4k=" className="d-block w-100 h-100" />
+      </div>
 
-                    <h1 className="fw-bold display-5">
-                        BUY BULK NON TRADE CEMENT <span className="text-warning">@</span><br />
-                        <span className="text-warning">DISCOUNT PRICE.</span>
-                    </h1>
+      <div className="carousel-item h-100">
+        <img src="https://img.freepik.com/free-photo/civil-engineer-construction-worker-architects-wearing-hardhats-safety-vests-are-working-together-construction-site-building-home-cooperation-teamwork-concept_640221-172.jpg?semt=ais_hybrid&w=740&q=80" className="d-block w-100 h-100" />
+      </div>
 
-                    <p className="mt-3 mx-auto" style={{ maxWidth: "750px" }}>
-                        You are here because you are looking for the best quality Non Trade Cement.
-                        We supply bulk cements of the highest quality all across India.
-                    </p>
+      <div className="carousel-item h-100">
+        <img src="https://www.park.edu/wp-content/uploads/2025/04/Construction-Management-Park-University-min.png" className="d-block w-100 h-100" />
+      </div>
 
-                    <div className="d-flex justify-content-center gap-3 mt-4">
-                        <a href="#contact" className="btn btn-warning btn-lg text-white px-4">
-                            ORDER NOW
-                        </a>
+      <div className="carousel-item h-100">
+        <img src="https://djbhglobal.com/wp-content/uploads/2022/09/New-Project-1024x576.webp" className="d-block w-100 h-100" />
+      </div>
 
-                        <a href="tel:+91XXXXXXXXXX" className="btn btn-outline-light btn-lg px-4">
-                             CALL NOW
-                        </a>
-                    </div>
+    </div>
 
-                </div>
-            </section>
+    {/* ===== LEFT BUTTON ===== */}
+    <button
+      className="carousel-control-prev"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="prev"
+    >
+      <span className="carousel-control-prev-icon"></span>
+    </button>
+
+    {/* ===== RIGHT BUTTON ===== */}
+    <button
+      className="carousel-control-next"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="next"
+    >
+      <span className="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  {/* ===== Overlay ===== */}
+  <div className="hero-overlay"></div>
+
+  {/* ===== Content ===== */}
+  <div className="container text-center position-relative z-2">
+    <p className="text-uppercase fw-semibold text-warning mb-2">
+      Welcome to Non Trade Cement
+    </p>
+
+    <h1 className="fw-bold display-5">
+      BUY BULK NON TRADE CEMENT <span className="text-warning">@</span><br />
+      <span className="text-warning">DISCOUNT PRICE.</span>
+    </h1>
+
+    <p className="mt-3 mx-auto" style={{ maxWidth: "750px" }}>
+      We supply bulk non-trade cement across India at best discount price.
+    </p>
+
+    <div className="d-flex justify-content-center gap-3 mt-4">
+      <a href="#contact" className="btn btn-warning btn-lg px-4 text-white">
+        ORDER NOW
+      </a>
+
+      <a href="tel:02245301957" className="btn btn-outline-light btn-lg px-4">
+        CALL NOW
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
 
 
             <section id="about" className="py-5 about-section">
@@ -65,7 +120,7 @@ const Home = () => {
                                 </a>
 
                                 <a
-                                    href="tel:+916291420704"
+                                    href="tel:02245301957"
                                     className="btn btn-dark px-4"
                                 >
                                      Call Now
@@ -252,12 +307,12 @@ const Home = () => {
                             </p>
 
                             <h3 className="fw-bold mb-4">
-                                 +91-6291420704
+                                 +02245301957
                             </h3>
 
                             <div className="d-flex justify-content-center gap-3 flex-wrap">
                                 <a
-                                    href="tel:+916291420704"
+                                    href="tel:02245301957"
                                     className="btn btn-warning btn-lg text-white px-4"
                                 >
                                      Call Now
@@ -274,8 +329,8 @@ const Home = () => {
                             </div>
 
                             <div className="mt-4">
-                                <p className="mb-1 fw-semibold">+91-6291420704</p>
-                                <p className="mb-0 fw-semibold">+91-62914207040</p>
+                                <p className="mb-1 fw-semibold">+02245301957</p>
+                                
                             </div>
                         </div>
 
@@ -633,11 +688,11 @@ const Home = () => {
                             </p>
 
                             <h3 className="fw-bold mb-4">
-                             Call Now : +91-6291420704
+                             Call Now : +02245301957
                             </h3>
 
                             <a
-                                href="tel:+916291420704"
+                                href="tel:02245301957"
                                 className="btn btn-warning btn-lg text-white px-4"
                             >
                                  अभी कॉल करें
