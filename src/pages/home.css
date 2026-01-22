@@ -1,0 +1,336 @@
+/* ================================
+   HOME HERO SECTION
+================================ */
+
+.hero-section {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("https://media.istockphoto.com/id/2166824571/photo/top-view-of-contractors-engineers-and-formats-team-in-safety-vests-with-helmets-working-with.jpg?s=612x612&w=0&k=20&c=Rv49pawVY6T-0OQTPc8FtSy6Em9V3gDxIMezaRWDh9g=");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Top small text */
+.hero-section .text-warning {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Main heading */
+.hero-section h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Orange highlight text */
+.hero-section .text-warning {
+  color: #ff6a00 !important;
+}
+
+/* Paragraph */
+.hero-section p {
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+/* Buttons */
+.hero-section .btn-warning {
+  background-color: #ff6a00;
+  border: none;
+}
+
+.hero-section .btn-warning:hover {
+  background-color: #e65c00;
+  color: #fff;
+}
+
+.hero-section .btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   ABOUT SECTION WITH IMAGES
+================================ */
+
+.about-image-wrapper {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.main-about-image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+/* About list */
+.about-list {
+  padding-left: 18px;
+}
+
+.about-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay-image {
+    width: 100px;
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   WHY CHOOSE US SECTION
+================================ */
+
+.why-section {
+  background-color: #f9f9f9;
+}
+
+.why-list {
+  padding-left: 18px;
+}
+
+.why-list li {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* ================================
+   PROCESS STEPS
+================================ */
+
+.process-step {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.process-step span {
+  min-width: 45px;
+  height: 45px;
+  background-color: #ff6a00;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.process-step h6 {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+
+.process-step p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   CALL TO ACTION SECTION
+================================ */
+
+.call-section {
+  background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("https://static.vecteezy.com/system/resources/thumbnails/028/642/313/small/silhouette-construction-work-during-sunset-time-industry-construction-building-concept-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.call-section h2 {
+  font-size: 2.2rem;
+}
+
+.call-section h3 {
+  color: #ff6a00;
+}
+
+/* Buttons */
+.call-section .btn-warning {
+  background-color: #ff6a00;
+  border: none;
+}
+
+.call-section .btn-warning:hover {
+  opacity: 0.9;
+}
+
+.call-section .btn-outline-light:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .call-section h2 {
+    font-size: 1.7rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   SERVICES SECTION
+================================ */
+
+.services-section {
+  background-color: #f9f9f9;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.service-content h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.service-card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   FAQ SECTION
+================================ */
+
+.faq-section {
+  background-color: #ffffff;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ff6a00;
+  color: #fff;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
