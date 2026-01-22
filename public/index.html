@@ -15,19 +15,99 @@
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Bootstrap Icons -->
     <link
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-  rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-
-    <!-- ✅ Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
     <title>MAHALAXMI CEMENT PRODUCTS</title>
+
+    <!-- FLOAT BUTTONS STYLE -->
+    <style>
+      .floating-buttons-left,
+      .floating-buttons-right {
+        position: fixed;
+        z-index: 99999;
+      }
+
+      /* WhatsApp Left Side - LOWER POSITION */
+      .floating-buttons-left {
+        bottom: 40px;
+        left: 20px;
+      }
+
+      /* Phone Right Side - LOWER POSITION */
+      .floating-buttons-right {
+        bottom: 40px;
+        right: 20px;
+      }
+
+      /* Circle Buttons Base */
+      .float-btn {
+        width: 60px;
+        height: 60px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .whatsapp { background: #25d366; }
+      .call { background: #28a745; }
+
+      .float-btn:hover {
+        transform: scale(1.1);
+      }
+
+      /* CALL BUTTON RINGS */
+      .ring {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background: rgba(40, 167, 69, 0.4);
+        border-radius: 50%;
+        animation: ring 1.6s infinite;
+        z-index: -1;
+      }
+
+      .ring:nth-child(1) { animation-delay: 0s; }
+      .ring:nth-child(2) { animation-delay: 0.5s; }
+
+      @keyframes ring {
+        0% { transform: scale(0.8); opacity: 0.8; }
+        100% { transform: scale(1.8); opacity: 0; }
+      }
+
+      /* VIBRATION EFFECT */
+      .vibrate {
+        animation: vibrate 0.6s infinite;
+      }
+
+      @keyframes vibrate {
+        0% { transform: translate(1px,1px) rotate(0deg); }
+        20% { transform: translate(-1px,-1px) rotate(-2deg); }
+        40% { transform: translate(1px,-1px) rotate(2deg); }
+        60% { transform: translate(-1px,1px) rotate(0deg); }
+        80% { transform: translate(1px,1px) rotate(-2deg); }
+        100% { transform: translate(-1px,-1px) rotate(2deg); }
+      }
+    </style>
+
   </head>
 
   <body>
@@ -35,7 +115,33 @@
 
     <div id="root"></div>
 
-    <!-- ✅ Bootstrap JS -->
+    <!-- LEFT WHATSAPP BUTTON -->
+    <div class="floating-buttons-left">
+      <a
+        href="https://wa.me/916291420704"
+        target="_blank"
+        class="float-btn whatsapp"
+        title="Chat on WhatsApp"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div>
+
+    <!-- RIGHT PHONE BUTTON WITH VIBRATION + WAVES -->
+    <div class="floating-buttons-right">
+      <div class="ring"></div>
+      <div class="ring"></div>
+
+      <a
+        href="tel:+916291420704"
+        class="float-btn call vibrate"
+        title="Call Now"
+      >
+        <i class="bi bi-telephone-fill"></i>
+      </a>
+    </div>
+
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     ></script>

@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* BRAND */}
           <a className="navbar-brand" href="#home">
             <span className="brand-text">
-              MAHALAXMI CEMENT <span>PRODUCS</span>
+              Non Trade  <span>Cement</span>
             </span>
           </a>
 

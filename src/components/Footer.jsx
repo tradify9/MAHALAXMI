@@ -80,25 +80,6 @@ const Footer = () => {
 
 
 
-    <div className="floating-buttons">
-  <a
-    href="https://wa.me/916291420704"
-    target="_blank"
-    rel="noreferrer"
-    className="float-btn whatsapp"
-    title="Chat on WhatsApp"
-  >
-    <i className="bi bi-whatsapp"></i>
-  </a>
-
-  <a
-    href="tel:+916291420704"
-    className="float-btn call"
-    title="Call Now"
-  >
-    <i className="bi bi-telephone-fill"></i>
-  </a>
-</div>
 
     </>
   );

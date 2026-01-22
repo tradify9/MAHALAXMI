@@ -102,6 +102,15 @@
 
 .floating-buttons {
   position: fixed;
+  left: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+}
+.floating-button{
+   position: fixed;
   right: 20px;
   bottom: 30px;
   display: flex;
@@ -109,9 +118,10 @@
   gap: 15px;
   z-index: 9999;
 }
-
 /* Common button style */
 .float-btn {
+  position: relative;
+  right: 10px !important;
   width: 55px;
   height: 55px;
   border-radius: 50%;
