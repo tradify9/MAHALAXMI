@@ -64,9 +64,9 @@ const Footer = () => {
           <div className="col-md-3 col-sm-6 mb-4">
             <h5>Get In Touch</h5>
             <p><i className="bi bi-geo-alt"></i> Bandra Kurla, Mumbai - 400001</p>
-            <p><i className="bi bi-telephone"></i> +91-6291420704</p>
-            <p><i className="bi bi-envelope-at"></i> info@cementnontradebulk.com</p>
-            <p><i className="bi bi-globe"></i> www.cementnontradebulk.com</p>
+            <p><i className="bi bi-telephone"></i> 02245301957</p>
+            <p><i className="bi bi-envelope-at"></i> order@nontradebalkcement.com</p>
+            {/* <p><i className="bi bi-globe"></i> www.mahalaxmi.nontradebalkcement.com</p> */}
           </div>
 
         </div>

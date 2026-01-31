@@ -307,7 +307,7 @@ const Home = () => {
                             </p>
 
                             <h3 className="fw-bold mb-4">
-                                 +02245301957
+                                 02245301957
                             </h3>
 
                             <div className="d-flex justify-content-center gap-3 flex-wrap">
@@ -329,7 +329,7 @@ const Home = () => {
                             </div>
 
                             <div className="mt-4">
-                                <p className="mb-1 fw-semibold">+02245301957</p>
+                                <p className="mb-1 fw-semibold">02245301957</p>
                                 
                             </div>
                         </div>
@@ -688,7 +688,7 @@ const Home = () => {
                             </p>
 
                             <h3 className="fw-bold mb-4">
-                             Call Now : +02245301957
+                             Call Now : 02245301957
                             </h3>
 
                             <a
