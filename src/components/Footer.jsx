@@ -25,6 +25,7 @@ const Footer = () => {
               <li><i className="bi bi-info-circle"></i> <a href="#about">About Us</a></li>
               <li><i className="bi bi-briefcase"></i> <a href="#services">Our Services</a></li>
               <li><i className="bi bi-envelope"></i> <a href="#contact">Contact Us</a></li>
+              <li><i className="bi bi-shield-lock"></i> <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
             </ul>
           </div>
 

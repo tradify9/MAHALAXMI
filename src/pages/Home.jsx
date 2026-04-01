@@ -111,7 +111,7 @@ const Home = () => {
                             {/* BUTTONS */}
                             <div className="d-flex justify-content-center gap-3 mt-3">
                                 <a
-                                    href="https://wa.me/916291420704"
+                                    href="https://wa.me/918850883545"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="btn btn-success px-4"
@@ -319,7 +319,7 @@ const Home = () => {
                                 </a>
 
                                 <a
-                                    href="https://wa.me/916291420704"
+                                    href="https://wa.me/+918850883545"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="btn btn-outline-light btn-lg px-4"
@@ -702,6 +702,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+
 
         </>
     );
