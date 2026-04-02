@@ -1,9 +1,32 @@
-import React from "react";
+
+import {  react, useEffect } from "react";
 import "../pages/home.css";
+import { useLocation } from "react-router-dom";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 const Home = () => {
+     const routerLocation = useLocation();
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (routerLocation.hash) {
+      const id = routerLocation.hash.substring(1); // "#" remove
+      const el = document.getElementById(id);
+
+      if (el) {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+  };
+
+  const timer = setTimeout(handleScroll, 200);
+
+  return () => clearTimeout(timer); // cleanup
+}, [routerLocation]);
     return (
         <>
          <section

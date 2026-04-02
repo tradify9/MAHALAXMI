@@ -1,7 +1,22 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./navbar.css";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  // ✅ smooth scroll function
+  const scrollToSection = (id) => {
+    if (window.location.pathname !== "/") {
+      navigate("/"); // pehle home pe jao
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       {/* TOP MARQUEE */}
@@ -14,25 +29,26 @@ const Navbar = () => {
       </div>
 
       {/* NAVBAR */}
-      <nav className="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top p-5">
         <div className="container">
 
           {/* BRAND */}
-          <a className="navbar-brand" href="#home">
+          <span
+            className="navbar-brand"
+            style={{ cursor: "pointer" }}
+            onClick={() => scrollToSection("home")}
+          >
             <span className="brand-text">
-              Non Trade  <span>Cement</span>
+              Non Trade <span>Cement</span>
             </span>
-          </a>
+          </span>
 
-          {/* TOGGLER (RIGHT SIDE) */}
+          {/* TOGGLER */}
           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -40,23 +56,32 @@ const Navbar = () => {
           {/* MENU */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto align-items-lg-center gap-lg-3 text-center">
+
               <li className="nav-item">
-                <a className="nav-link" href="#home">Home</a>
+                <button className="nav-link btn" onClick={() => scrollToSection("home")}>
+                  Home
+                </button>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#about">About Us</a>
+                <button className="nav-link btn" onClick={() => scrollToSection("about")}>
+                  About Us
+                </button>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" href="#services">Our Services</a>
+                <button className="nav-link btn" onClick={() => scrollToSection("services")}>
+                  Our Services
+                </button>
               </li>
 
+              {/* ✅ SINGLE CTA BUTTON */}
               <li className="nav-item">
-                <a href="#contact" className="btn nav-cta-btn">
-                  Get Free Quote
-                </a>
+                <Link to="/contect" className="nav-cta-btn">
+                  Contect US
+                </Link>
               </li>
+
             </ul>
           </div>
 

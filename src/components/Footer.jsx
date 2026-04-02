@@ -1,7 +1,31 @@
-import React from "react";
+
+import { react, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
+
+  const routerLocation = useLocation();
+
+useEffect(() => {
+  const handleScroll = () => {
+    if (routerLocation.hash) {
+      const id = routerLocation.hash.substring(1); // "#" remove
+      const el = document.getElementById(id);
+
+      if (el) {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+  };
+
+  const timer = setTimeout(handleScroll, 200);
+
+  return () => clearTimeout(timer); // cleanup
+}, [routerLocation]);
   return (
     <>
     <footer className="footer-section">
@@ -24,7 +48,6 @@ const Footer = () => {
               <li><i className="bi bi-house-door"></i> <a href="#home">Home</a></li>
               <li><i className="bi bi-info-circle"></i> <a href="#about">About Us</a></li>
               <li><i className="bi bi-briefcase"></i> <a href="#services">Our Services</a></li>
-              <li><i className="bi bi-envelope"></i> <a href="#contact">Contact Us</a></li>
               <li><i className="bi bi-shield-lock"></i> <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
             </ul>
           </div>
