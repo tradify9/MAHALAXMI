@@ -67,7 +67,7 @@ const PrivacyPolicy = () => {
                 <h3>8. Contact Us</h3>
                 <div className="row text-center">
                   <div className="col-md-6">
-                    <p><i className="bi bi-telephone text-warning"></i> 02245301957</p>
+                    <p><i className="bi bi-telephone text-warning"></i> 02245301985</p>
                   </div>
                   <div className="col-md-6">
                     <p><i className="bi bi-envelope text-warning"></i> order@nontradebalkcement.com</p>

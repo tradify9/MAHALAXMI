@@ -105,7 +105,7 @@ useEffect(() => {
         ORDER NOW
       </a>
 
-      <a href="tel:02245301957" className="btn btn-outline-light btn-lg px-4">
+      <a href="tel:02245301985" className="btn btn-outline-light btn-lg px-4">
         CALL NOW
       </a>
     </div>
@@ -143,7 +143,7 @@ useEffect(() => {
                                 </a>
 
                                 <a
-                                    href="tel:02245301957"
+                                    href="tel:02245301985"
                                     className="btn btn-dark px-4"
                                 >
                                      Call Now
@@ -330,12 +330,12 @@ useEffect(() => {
                             </p>
 
                             <h3 className="fw-bold mb-4">
-                                 02245301957
+                                 02245301985
                             </h3>
 
                             <div className="d-flex justify-content-center gap-3 flex-wrap">
                                 <a
-                                    href="tel:02245301957"
+                                    href="tel:02245301985"
                                     className="btn btn-warning btn-lg text-white px-4"
                                 >
                                      Call Now
@@ -352,7 +352,7 @@ useEffect(() => {
                             </div>
 
                             <div className="mt-4">
-                                <p className="mb-1 fw-semibold">02245301957</p>
+                                <p className="mb-1 fw-semibold">02245301985</p>
                                 
                             </div>
                         </div>
@@ -711,11 +711,11 @@ useEffect(() => {
                             </p>
 
                             <h3 className="fw-bold mb-4">
-                             Call Now : 02245301957
+                             Call Now : 02245301985
                             </h3>
 
                             <a
-                                href="tel:02245301957"
+                                href="tel:02245301985"
                                 className="btn btn-warning btn-lg text-white px-4"
                             >
                                  अभी कॉल करें
