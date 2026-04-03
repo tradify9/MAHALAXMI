@@ -24,7 +24,7 @@ const Navbar = () => {
         <marquee behavior="scroll" direction="left">
           Book Nontrade Cement Online From Direct Suppliers At Market Best Rate.
           Minimum 500 Bags | हम उचित रेट पर हर ब्रांड की नॉन ट्रेड सीमेंट
-          डिस्काउंट रेट पर प्रदान करते हैं। संपर्क करें 📞 02245301957
+          डिस्काउंट रेट पर प्रदान करते हैं। संपर्क करें 📞 02245301985
         </marquee>
       </div>
 
