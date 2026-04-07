@@ -77,8 +77,8 @@ const Navbar = () => {
 
               {/* ✅ SINGLE CTA BUTTON */}
               <li className="nav-item">
-                <Link to="/contect" className="nav-cta-btn">
-                  Contect US
+                <Link to="/contact" className="nav-cta-btn">
+                  Contact US
                 </Link>
               </li>
 
